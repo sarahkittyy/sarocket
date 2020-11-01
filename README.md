@@ -1,5 +1,78 @@
 # sarocket
 
+## Dependencies
+
+- pthread
+
+### Optional
+
+- [Catch2](https://github.com/catchorg/Catch2/) (For unit testing)
+
+## Building
+
+```bash
+git clone https://github.com/sarahkittyy/sarocket
+cd sarocket
+mkdir build
+cd build
+cmake \
+	-DBUILD_TESTS=on \ # if you want tests enabled
+	..
+make
+```
+
+## Running the tests
+
+```bash
+make test
+```
+
+## Example
+
+server.cpp
+```cpp
+#include <sarocket.hpp>
+#include <cstdio>
+#include <cstring>
+
+int main() {
+	sar::server serv;
+	serv.bind(8080);
+	serv.listen();
+
+	sar::client c;
+	serv.accept(c);
+
+	const char* data = "hello from server!";
+	c.send(data, strlen(data));
+
+	return 0;
+}
+
+```
+
+client.cpp
+```cpp
+#include <sarocket.hpp>
+#include <cstdio>
+
+int main() {
+	sar::socket s;
+	s.connect("localhost", 8080);
+
+	char* buf = s.recv();
+
+	std::printf("received string: %s\n", buf);
+
+	delete[] buf;
+	return 0;
+}
+```
+
+client output: `received string: hello from server!`
+
 ## TODO
 
-- [ ] add packets
+- [ ] Universal packet type.
+- [ ] Stream operations
+- [ ] Support for STL container and types (`std::string`, `std::vector`)
