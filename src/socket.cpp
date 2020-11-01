@@ -62,9 +62,9 @@ void socket::send(const char* buf, size_t len) {
 		throw std::runtime_error("Socket id not valid!");
 	}
 
-	int total = 0;
+	size_t total = 0;
 	do {
-		int sent = ::send(m_sid, buf + total, len - total, 0);
+		size_t sent = ::send(m_sid, buf + total, len - total, 0);
 		if (sent < 0) {
 			throw std::runtime_error("Error sending data.");
 		}

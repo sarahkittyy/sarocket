@@ -20,9 +20,9 @@ void client::send(const char* bytes, size_t len) {
 		throw std::runtime_error("Client has no valid socket id.");
 	}
 
-	int total = 0;
+	size_t total = 0;
 	do {
-		int sent = ::send(m_sid, bytes + total, len - total, 0);
+		size_t sent = ::send(m_sid, bytes + total, len - total, 0);
 		if (sent < 0) {
 			throw std::runtime_error("Error sending to client.");
 		}
