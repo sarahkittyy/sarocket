@@ -12,9 +12,7 @@
 
 ```bash
 git clone https://github.com/sarahkittyy/sarocket
-cd sarocket
-mkdir build
-cd build
+cd sarocket/build
 cmake \
 	-DBUILD_TESTS=on \ # if you want tests enabled
 	..
