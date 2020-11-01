@@ -20,7 +20,7 @@ jobs:
       run: git clone https://github.com/catchorg/Catch2
     - name: Switch to Catch2 v2.x branch
       working-directory: Catch2
-      run: git branch v2.x
+      run: git checkout v2.x
     - name: Build Catch2
       working-directory: Catch2
       run: cmake -Bbuild -H. -DBUILD_TESTING=OFF
