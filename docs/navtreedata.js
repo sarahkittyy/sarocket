@@ -31,7 +31,8 @@ var NAVTREE =
     [ "Building", "index.html#autotoc_md3", null ],
     [ "Running the tests", "index.html#autotoc_md4", null ],
     [ "Example", "index.html#autotoc_md5", null ],
-    [ "TODO", "index.html#autotoc_md6", null ],
+    [ "Docs", "index.html#autotoc_md6", null ],
+    [ "TODO", "index.html#autotoc_md7", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
