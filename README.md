@@ -69,8 +69,14 @@ int main() {
 
 client output: `received string: hello from server!`
 
+## Docs
+
+Docs located at https://sarahkittyy.github.io/sarocket
+
 ## TODO
 
 - [ ] Universal packet type.
 - [ ] Stream operations
 - [ ] Support for STL container and types (`std::string`, `std::vector`)
+- [ ] Natural support for UDP and IPV6
+- [ ] More abstraction over send / recv

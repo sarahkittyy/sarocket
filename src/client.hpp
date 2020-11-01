@@ -29,9 +29,10 @@ public:
 	char* recv();
 
 private:
+	// so the server can fill m_sid.
 	friend class server;
 
-	/// internal socket id
+	// internal socket id
 	int m_sid;
 };
 
