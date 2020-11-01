@@ -1,4 +1,4 @@
-# sarocket
+# sarocket ![](https://img.shields.io/github/workflow/status/sarahkittyy/sarocket/CMake)
 
 ## Dependencies
 
