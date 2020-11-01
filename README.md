@@ -6,7 +6,7 @@
 
 ### Optional
 
-- [Catch2](https://github.com/catchorg/Catch2/) (For unit testing)
+- [Catch2 v2.x](https://github.com/catchorg/Catch2/tree/v2.x) (For unit testing)
 
 ## Building
 
