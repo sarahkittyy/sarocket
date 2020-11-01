@@ -2,11 +2,8 @@
 
 ## Dependencies
 
-- pthread
-
-### Optional
-
-- [Catch2 v2.x](https://github.com/catchorg/Catch2/tree/v2.x) (For unit testing)
+- (Optional) pthread (For testing)
+- (Optional) [Catch2 v2.x](https://github.com/catchorg/Catch2/tree/v2.x) (For testing)
 
 ## Building
 
