@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.14)
 project(sarocket)
 
 find_package(Catch2 REQUIRED)
